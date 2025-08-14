@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form login</title>
+  </head>
+  <body>
+    <h1>Login To Your Account</h1>
+    <br />
+    <div>
+      <form action="login.php" method="post">
+        <p>
+          <label>Username:</label>
+          <input type="text" name="username" placeholder="username..." />
+        </p>
+        <p>
+          <label>Password:</label>
+          <input type="password" name="password" placeholder="password..." />
+        </p>
+        <br />
+        <p>
+          <label
+            ><input type="checkbox" name="remember" value="remember" />Remember
+            Me?</label
+          >
+        </p>
+        <br />
+        <p>
+          <input type="submit" name="submit" value="login" />
+        </p>
+      </form>
+    </div>
+    <div>
+      <br />
+      <br />
+      <h1>Login To Your IP Address</h1>
+      <form action="contact.php" method="post">
+        <fieldset>
+          <legend>CONTACT</legend>
+          <p>
+            <label>Username:</label>
+            <input type="text" name="username" placeholder="your name...." />
+          </p>
+          <p>
+            <label>Subject:</label>
+            <input type="text" name="subject" placeholder="Subject...." />
+          </p>
+          <p>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="your email...." />
+          </p>
+          <p>
+            <input type="submit" name="submit" value="send" />
+          </p>
+        </fieldset>
+      </form>
+    </div>
+    <br />
+    <div>
+      <h1>Login To Yourself</h1>
+      <br />
+      <form action="register.php" method="post">
+        <fieldset>
+          <legend>Register to yourself</legend>
+          <p>
+            <label>Full Name:</label>
+            <input type="text" name="username" placeholder="full name...." />
+          </p>
+          <p>
+            <label>Username:</label>
+            <input type="text" name="username" placeholder="username...." />
+          </p>
+          <p>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="your email...." />
+          </p>
+          <p>
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="password...." />
+          </p>
+          <p>
+            <label>Your Gender:</label>
+            </label><input type="radio" name="your_gender" value="male">Male</label>
+            </label><input type="radio" name="your_gender" value="female">Female</label>
+            </label><input type="radio" name="your_gender" value="ahhellnah">Lgbtq+</label>
+          </p>
+          <p>
+            <label>Religion:</label>
+            <select name="religion">
+                <option value="notanswering"></option>
+                <option value="islam">Islam</option>
+                <option value="christian">Christian</option>
+                <option value="buddha">Buddha</option>
+                <option value="konghuchu">konghuchu</option>
+                <option value="jewish">Jewish</option>
+                <option value="atheist">atheist</option>
+                <option value="spawnism">Spawnism</option>
+            </select>
+          </p>
+          <p>
+            <label>Biography</label>
+            <textarea name="biography"></textarea>
+          </p>
+          <p>
+            <input type="submit" name="login" value="Login to the world...." />
+          </p>
+        </fieldset>
+      </form>
+    </div>
+    <div>
+      <br />
+      <br />
+      <h1>Login To Your Github</h1>
+      <form action="contact.php" method="post">
+        <fieldset>
+          <legend>FORM</legend>
+          <p>
+            <label>Web address:</label>
+            <input type="url" name="name" placeholder="enter the web address...." />
+          </p>
+          <p>
+            <label>Date of birth</label>
+            <input type="date" name="date"/>
+          </p>
+          <p>
+            <label>Age:</label>
+            <input type="number"  min="5" max="125" name="Age"/>
+          </p>
+          <p>
+            <input type="submit" name="submit" value="send" />
+          </p>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
