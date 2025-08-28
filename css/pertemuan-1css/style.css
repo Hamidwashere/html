@@ -1,0 +1,16 @@
+   h2 {
+            color: blue;
+            background-color: gray;
+        }
+        p {
+            color: red;
+            background-color: yellow;
+            font-family: Arial;
+            line-height: 1.6;
+            
+        }
+        h1 {
+          text-align: center;
+          text-transform: uppercase;
+          
+        }

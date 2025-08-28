@@ -1,0 +1,19 @@
+h1 {
+    color: aquamarine;
+    text-transform: uppercase;
+}
+
+.paragraf-1 {
+    color: cadetblue;
+    font-size: 10px;
+    font-family: arial;
+
+}
+#header-1 {
+    background-color: azure;
+    text-align: center;
+}
+
+input[type="text"] {
+    border: 1px solid green
+}
