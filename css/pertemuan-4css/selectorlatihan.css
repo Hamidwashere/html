@@ -1,0 +1,55 @@
+* {
+  border: 3px solid yellow;
+}
+p {
+  color: blue;
+}
+.pink {
+  color: grey;
+  background-color: violet;
+  padding: 5px;
+}
+.paragraf {
+  color: black;
+  font-weight: bolder;
+}
+.bg-teal {
+  background: teal;
+}
+#header {
+  background-color: teal;
+  color: white;
+  height: 200px;
+  padding: 50px;
+}
+#menu {
+  background-color: coral;
+  color: white;
+  height: 100px;
+  padding: 100px;
+  margin-top: 500px;
+}
+.link {
+  background-color: blueviolet;
+  color: white;
+  text-decoration: none;
+}
+.backtotop {
+  background-color: red;
+  color: white;
+}
+input[type="text"] {
+  color: white;
+  padding: 10px;
+  border: 1px solid black;
+  width: 300px;
+}
+a:hover {
+  color: green;
+  background-color: black;
+  padding: 5px;
+  text-decoration: none;
+}
+p::first-line {
+    
+}

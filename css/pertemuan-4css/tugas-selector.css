@@ -1,0 +1,44 @@
+.image {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+}
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+#header {
+    height: 100px;
+    padding: 50px;
+    background-color: greenyellow;
+    color: black;
+}
+.span {
+    font-weight: bolder;
+    color: blue;
+}
+#article {
+ text-align: left;
+ margin-top: 50px;
+ margin-bottom: 50px;
+}
+#nav {
+    text-align: center;
+    background-color: rgb(34, 34, 222);
+  
+}
+.gotobottom {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.gotobottom:hover {
+    background-color: aqua;
+    color: black;
+}
+#footer {
+    text-align: center;
+    color: gray;
+    background-color: azure;
+
+}
