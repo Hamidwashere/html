@@ -1,0 +1,44 @@
+header h1 {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.text-justify {
+    text-align: justify;
+}
+.left-to-right {
+    /* direction: ltr; */
+    text-align: start;
+    font-size: 24px;
+
+}
+.right-to-left {
+/* direction: rtl; */
+text-align: end;
+font-size: 24px;
+}
+.upperline {
+    text-decoration: underline;
+    border-top: 2px solid black;
+    padding-top: 10px;
+}
+.lowerline {
+    text-decoration: underline;
+    border-top: 2px solid black;
+    padding-top: 10px;
+}
+.deleted {
+    text-decoration: line-through;
+    border-top: 2px solid black;
+    padding-top: 10px;
+}
+body {
+    background-image: url(/css/pertemuan-7css/Laptop.jpg);
+}
