@@ -22,3 +22,17 @@ h1::selection {
   background: yellow;
   color: black;
 }
+html {
+  font-size: 16px; /* root */
+}
+h1 {
+  font-size: 2rem; /* 32px */
+}
+p {
+  font-size: 1rem; /* 16px */
+}
+.inipe {
+  font-size: 20px;
+  font-weight: 500;
+}
+

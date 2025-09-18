@@ -1,0 +1,22 @@
+.kodemono {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+header {
+    border-style: solid;
+    border-width: 1px 2px 3px 4px;
+    border-color: red black green blue;
+}
+h2 {
+    background: aquamarine;
+    color: blue;
+    padding: 16px;
+    border-radius: 16px;
+}
+h3 {
+  border: 20px solid transparent;
+  border-image: url(border-new.png) 30 round;
+  border-image-repeat: round stretch;
+}

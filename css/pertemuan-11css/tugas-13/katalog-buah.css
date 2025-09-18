@@ -1,0 +1,25 @@
+* {
+    font-family: sans-serif;
+    background-color: beige;
+}
+.katalog img {
+    width: 250px;
+    height: 250px;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+img:hover {
+    transition: all 0.4s ease;
+    transform: scale(1.05);
+    border: 5px solid gray;
+    box-shadow: 5px 5px 0 black,
+    -5px -5px 0 black;;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 100px;
+}

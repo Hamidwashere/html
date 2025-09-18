@@ -1,0 +1,29 @@
+.header {
+    background-color: aqua;
+    color: black;
+    width: 500px;
+    padding: 8%;
+    border-radius: 5%;
+
+}
+.article {
+    background-color: aqua;
+    color: black;
+    margin: 24px;
+    width: 600px;
+    padding: 16px;
+    font-style: italic;
+    
+}
+h2 {
+    font-size: 200%;
+    font-style: ;
+text-transform: uppercase;
+}
+.text-big {
+    font-size: 120%;
+    
+}
+img {
+    max-width: 100%;
+}
