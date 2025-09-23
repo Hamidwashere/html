@@ -1,0 +1,15 @@
+h1 {
+    font-size: 2.1rem;
+    text-align: center;
+}
+.parag {
+    font-size: 1.2rem;
+    text-align: center;
+}
+div {
+    width: 50%;
+    height: 50vh;
+    background-color: lightblue;
+   align-items: center;
+
+}
