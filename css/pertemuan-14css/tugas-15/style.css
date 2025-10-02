@@ -1,40 +1,61 @@
 * {
-    font-family: sans-serif;
-    background-color: azure;
-}
-/* }
-
-
-    body {
-    text-align: center;
-    display: grid;
-    gap: 50px;
-    justify-content: center;
-    margin-top: 100px;
+  font-family: sans-serif;
+  background-color: azure;
 }
 
+body {
+}
 
 .kartu {
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax)
-    gap: 100px;
-    margin-top: 100px;
-    justify-content: center;
-    width: 200px;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  margin: 50px;
+  flex-wrap: wrap;
 }
 
 .card-1 img {
-    width: 200px;
-    height: 200px;
-    border: 5px solid black;
-    border-radius: 7px;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 7px;
 }
 .card-1 {
-   padding: 20px;
-   margin-top: 50px;
-   margin-bottom: 50px;
+  text-align: center;
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  padding: 15px 10px;
+}
+.isi {
+  text-align: center;
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+.feedback {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  margin: 50px;
+  flex-wrap: wrap;
+}
+.head {
+    text-align: center;
+    margin: 50px;
+}
+.card-1:hover {
+    transition: 0.3s;
+    transition: all 0.4s ease;
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
 
-} */
-
-
+}
+.isi:hover {
+     transition: 0.3s;
+    transition: all 0.4s ease;
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
