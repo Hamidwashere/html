@@ -1,0 +1,42 @@
+/* #container {
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    margin: 0;
+}
+#header {
+    height: 100px;
+    background-color: gray;
+}
+#content {
+width: 75%;
+height: 620px;
+background-color: green;
+float: left;
+}
+#sidebar {
+    width: 25%;
+    height: 620px;
+    background-color: blue;
+    float: right;
+
+}
+#footer {
+    height: 50px;
+    background-color: grey;
+    clear: both;
+}
+#content p {
+    overflow-wrap: break-word;
+    white-space: normal;
+    margin: 0 auto;
+    display: block;
+} */
+ div {
+    background-color: coral;
+    width: 200px;
+    height: 65px;
+    border: 1px solid black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+ }

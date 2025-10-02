@@ -1,0 +1,40 @@
+* {
+    font-family: sans-serif;
+    background-color: azure;
+}
+/* }
+
+
+    body {
+    text-align: center;
+    display: grid;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.kartu {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax)
+    gap: 100px;
+    margin-top: 100px;
+    justify-content: center;
+    width: 200px;
+}
+
+.card-1 img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 7px;
+}
+.card-1 {
+   padding: 20px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+
+} */
+
+

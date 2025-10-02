@@ -1,0 +1,29 @@
+.sticky {
+    position: sticky;
+    top: 0;
+    height: 100px;
+    background-color: gray;
+    text-align: center;
+}
+.card {
+    justify-content: center;
+}
+.card-img {
+background-image: url(ape.jpg);
+height: 500px;
+width: 500px;
+position: relative;
+align-items: center;
+}
+.card-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: gray;
+    color: white;
+}
+.tags {
+    background-color: grey;
+    position: relative;
+    top: 4px;
+}

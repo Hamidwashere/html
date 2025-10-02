@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float</title>
+    <style>
+      /* .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      ul.navigasi {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        background: black;
+      }
+      ul.navigasi li {
+        float: left;
+      }
+      ul.navigasi li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      ul.navigasi li a:hover {
+        background-color: gray;
+      } */
+       .container {
+        width: 100%;
+       }
+       .sidebar {
+        float: left;
+        width: 30%;
+        background-color: gray;
+       }
+       .konten {
+        float: right;
+        width: 70%;
+        background-color: beige;
+       }
+       .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+       }
+    </style>
+  </head>
+  <body>
+    <!-- <img src="download (1).jpg" alt="" style="float: right; width: 150px;">
+    <p style="margin-right: 160px;">ini adalah text yang mengisi ruang bagian sebelah kiri</p>
+    <div style="clear: right; width: 150px; height: 150px; background-color: aqua;">
+    </div> -->
+    <!-- <div class="clearfix">
+      <div style="float: left">elemen 1</div>
+      <div style="float: right">elemen 2</div>
+    </div> -->
+    <!-- <ul class="navigasi">
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+    </ul> -->
+    <div class="container clearfix">
+      <div
+        class="sidebar"
+        style="
+          float: left;
+          width: 25%;
+          background-color: white;
+          padding: 10px;
+          box-sizing: border-box;
+        "
+      >
+        ini adalah konten sidebar
+      </div>
+      <div
+        class="content"
+        style="
+          margin-left: 25%;
+          background: lightgray;
+          padding: 10px;
+          box-sizing: border-box;
+        "
+      >
+        ini adalah konten utama
+      </div>
+    </div>
+  </body>
+</html>
