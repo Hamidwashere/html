@@ -1,38 +1,42 @@
-h1 {
-  text-shadow: 
-    2px 2px 0 red,
-    -2px -2px 0 blue;
-    text-align: center;
+/* ...existing code... */
 
-}
-h1::before {
-  content: " "; /* muncul sebelum teks */
-}
-
-h1::after {
-  content: " ⚡"; /* muncul setelah teks */
-}
-
-
-h1::first-letter {
-  font-size: 2em;
-  color: red;
-}
-h1::selection {
-  background: yellow;
-  color: black;
-}
-html {
-  font-size: 16px; /* root */
-}
-h1 {
-  font-size: 2rem; /* 32px */
-}
-p {
-  font-size: 1rem; /* 16px */
-}
-.inipe {
-  font-size: 20px;
-  font-weight: 500;
+/* navigasi mengambang di kiri, selalu tetap di layar */
+.floating-nav {
+    position: fixed;      /* tetap saat scroll */
+    left: 16px;           /* jarak dari tepi kiri */
+    top: 50%;             /* posisikan vertikal di tengah */
+    transform: translateY(-50%); /* koreksi tengah vertikal */
+    width: 200px;         /* lebar navigasi */
+    background: #ffffff;  /* warna latar */
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    z-index: 9999;        /* di atas konten lain */
+    overflow: auto;       /* scroll kalau konten panjang */
 }
 
+/* gaya list dan link */
+.floating-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 8px;
+}
+.floating-nav li + li {
+    margin-top: 6px;
+}
+.floating-nav a {
+    display: block;
+    padding: 10px 12px;
+    color: #222;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.floating-nav a:hover {
+    background: #f0f0f0;
+}
+
+/* responsif: sembunyikan nav di layar kecil atau ubah ukurannya */
+@media (max-width: 700px) {
+    .floating-nav {
+        display: none; /* atau gunakan transform untuk memunculkan via tombol */
+    }
+}
