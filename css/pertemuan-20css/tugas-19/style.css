@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: white;
+}
+.card-1 {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: red;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.014);
+}
+.card-1:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.card-1 ol {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  background-color: white;
+  padding: 25px;
+}
+.card-2 {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.014);
+}
+.card-2:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.card-2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 78px;
+  background-color: white;
+  padding: 25px;
+}
+.card-3 {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.014);
+}
+.card-3:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.card-3 dl {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  background-color: white;
+  padding: 25px;
+}
+.card-3 dt {
+  font-weight: bold;
+  font-size: large;
+  color: red;
+}
+.card-3 dd {
+  margin-left: 20px;
+}
+.genap {
+  background-color: lightgray;
+}

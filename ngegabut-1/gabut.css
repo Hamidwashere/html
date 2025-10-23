@@ -1,42 +1,133 @@
-/* ...existing code... */
-
-/* navigasi mengambang di kiri, selalu tetap di layar */
-.floating-nav {
-    position: fixed;      /* tetap saat scroll */
-    left: 16px;           /* jarak dari tepi kiri */
-    top: 50%;             /* posisikan vertikal di tengah */
-    transform: translateY(-50%); /* koreksi tengah vertikal */
-    width: 200px;         /* lebar navigasi */
-    background: #ffffff;  /* warna latar */
-    border-radius: 8px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    z-index: 9999;        /* di atas konten lain */
-    overflow: auto;       /* scroll kalau konten panjang */
+/* glass sticky navbar */
+.glass-nav {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  z-index: 1000;
 }
-
-/* gaya list dan link */
-.floating-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 8px;
+.glass-nav .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
 }
-.floating-nav li + li {
-    margin-top: 6px;
+.nav-links {
+  display: flex;
+  gap: 18px;
+  list-style: none;
 }
-.floating-nav a {
-    display: block;
-    padding: 10px 12px;
-    color: #222;
-    text-decoration: none;
-    border-radius: 6px;
+.nav-links a {
+  color: #222;
+  text-decoration: none;
+  padding: 6px 0;
+  position: relative;
 }
-.floating-nav a:hover {
-    background: #f0f0f0;
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 0;
+  background: #35424a;
+  transition: width 0.25s ease;
 }
-
-/* responsif: sembunyikan nav di layar kecil atau ubah ukurannya */
-@media (max-width: 700px) {
-    .floating-nav {
-        display: none; /* atau gunakan transform untuk memunculkan via tombol */
-    }
+.nav-links a:hover::after {
+  width: 100%;
+}
+.float-left {
+  position: fixed;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  z-index: 999;
+}
+.float-left ul {
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.float-left a {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.float-left a:hover {
+  background: #f0f0f0;
+  transform: translateX(4px);
+  transition: all 0.18s;
+}
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #fff;
+}
+.hamburger {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.offcanvas {
+  position: fixed;
+  right: -320px;
+  top: 0;
+  height: 100%;
+  width: 320px;
+  background: #fff;
+  box-shadow: -8px 0 30px rgba(0, 0, 0, 0.12);
+  transition: right 0.28s;
+  padding: 24px;
+  z-index: 1200;
+}
+.offcanvas.open {
+  right: 0;
+}
+@media (min-width: 900px) {
+  .hamburger,
+  .offcanvas {
+    display: none;
+  }
+}
+.center-nav ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  padding: 16px 0;
+}
+.center-nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition:background 0.18s, transform 0.18s;
+}
+.center-nav a:hover {
+  background: rgba(53, 66, 74, 0.06);
+  transform: translateY(-2px);
+}
+.center-nav .cta {
+  background: #35424a;
+  color: #fff;
+  padding: 10px 16px;
+  box-shadow: 0 6px 16px rgba(53, 66, 74, 0.12);
 }

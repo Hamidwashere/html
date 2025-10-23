@@ -1,0 +1,26 @@
+nav {
+    background: honeydew;
+    color: grey;
+    padding: 20px;
+}
+nav#withflex {
+    display: flex;
+
+}
+nav#withflex div {
+   margin-right: 20px;
+}
+nav#withflex div:last-child {
+    margin-left: auto;
+}
+nav#withgrid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    background-color: skyblue;
+    padding: 20px;
+    
+}
+nav#withgrid div:last-child {
+grid-column: 10;
+}
