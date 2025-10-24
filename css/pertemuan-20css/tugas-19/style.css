@@ -35,6 +35,11 @@ h1 {
   background-color: white;
   padding: 25px;
 }
+.card-1 ol li,
+.card-2 ul li,
+.card-3 dl dt {
+    list-style-position: inside;
+}
 .card-2 {
   margin: 20px;
   padding: 20px;
@@ -89,4 +94,14 @@ h1 {
 }
 .genap {
   background-color: lightgray;
+  padding: 0 10px;
+}
+.bulat {
+  list-style-type: circle;
+}
+.kotak {
+  list-style-type: square;
+}
+.biasa {
+  list-style-type: disc;
 }
