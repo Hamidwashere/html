@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>gabut</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main id="main">
+    <!-- <main id="main">
       <header>
         <div id="logo">a<img src="" alt="">
         </div>
@@ -17,6 +18,34 @@
       <section></section>
       <section></section>
       <footer></footer>
+
     </main>
+    // ...existing code... -->
+    <section class="contact-me">
+      <div class="contact-text">
+        <p class="heading-color">Get in touch</p>
+        <h1 class="heading-color">Contact me</h1>
+        <p class="body-color">
+          Lorem ipsum sit dolor amet, consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <form class="contact-form" action="form.php" method="post">
+        <!-- row 1: 4 fields side-by-side -->
+        <input type="text" name="first_name" placeholder="First name" required>
+        <input type="text" name="last_name" placeholder="Last name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Phone">
+
+        <!-- row 2: full width subject -->
+        <input type="text" name="subject" placeholder="Subject" class="full" required>
+
+        <!-- row 3: full width message -->
+        <textarea name="message" placeholder="Your message" rows="6" class="full" required></textarea>
+
+        <!-- submit button -->
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </section>
   </body>
 </html>

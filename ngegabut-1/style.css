@@ -1,0 +1,71 @@
+
+/* Contact form grid */
+.contact-me {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+  align-items: start;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolom untuk 4 field pertama */
+  gap: 16px;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #fff;
+  color: #222;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff8303;
+  box-shadow: 0 0 0 3px rgba(255,130,3,0.08);
+}
+
+/* class untuk elemen full width */
+.contact-form .full {
+  grid-column: 1 / -1; /* ambil semua kolom */
+}
+
+/* tombol submit: taruh di akhir, bisa rata kanan atau full */
+.btn-submit {
+  grid-column: 1 / -1;
+  justify-self: end; /* ganti ke center atau stretch sesuai selera */
+  padding: 12px 24px;
+  background: #FF8303;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Responsive: di layar kecil ubah jadi 1 kolom */
+@media (max-width: 900px) {
+  .contact-form {
+    grid-template-columns: 1fr 1fr; /* 2 kolom */
+  }
+  .contact-form input:nth-child(-n+4) { /* first 4 inputs tetap */
+    /* no-op; layout otomatis */
+  }
+}
+
+@media (max-width: 560px) {
+  .contact-form {
+    grid-template-columns: 1fr; /* 1 kolom pada HP */
+  }
+  .btn-submit {
+    justify-self: stretch;
+  }
+}

@@ -1,3 +1,4 @@
+/* ini setting awal dari semua halaman css */
 * {
   margin: 0;
   padding: 0;
@@ -5,33 +6,36 @@
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #F0E3CA;
   color: #333;
   line-height: 1.6;
 }
+/* ini setting nav bar */
 .nav {
   position: sticky;
   top: 0;
   backdrop-filter: blur(8px);
-  background: rgba(255, 255, 255, 0.6);
+  background: #FF8303;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   z-index: 1000;
-}
-.nav .container {
-  max-width: 1100px;
+  width: 1000px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 12px 20px;
+  height: 60px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
+/* ini setting buat link nav */
 .nav-links {
   display: flex;
-  gap: 18px;
+  gap: 100px;
   list-style: none;
 }
 .nav-links a {
-  color: #222;
+  color: #1B1A17;
   text-decoration: none;
   padding: 6px 0;
   position: relative;
@@ -49,3 +53,41 @@ body {
 .nav-links a:hover::after {
   width: 100%;
 }
+/* sekarang bagian hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  position: relative;
+  font-style: italic;
+  color: #222;
+}
+
+.hero h1::before,
+.hero h1::after {
+  font-size: 60px;
+  color: #888;
+  font-weight: bold;
+  position: relative;
+}
+
+.hero h1::before {
+  content: "“";
+  margin-right: 10px;
+}
+
+.hero h1::after {
+  content: "”";
+  margin-left: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #555;
+}
+
+

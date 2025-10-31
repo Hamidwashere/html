@@ -1,0 +1,397 @@
+/* bagian universal untuk semua elemen HTML */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5fcff;
+  color: #333;
+}
+.heading-color {
+  color: #282938;
+}
+.body-color {
+  color: #1c1e53;
+}
+/* bagian navigasi */
+.nav {
+  background-color: white;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.nav-links {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+.logo-img {
+  width: 150px;
+  height: auto;
+}
+.nav-links a {
+  color: black;
+  margin: 0 15px;
+  text-decoration: none;
+}
+.button {
+  padding: 15px 25px;
+  border: solid 1px #5e3bee;
+  border-radius: 5px;
+}
+.button a {
+  color: #5e3bee;
+  text-decoration: none;
+  font-weight: lighter;
+}
+.nav-links li {
+  list-style: none;
+  display: inline;
+}
+nav div:first-child {
+  margin-right: auto;
+  margin-left: 40px;
+}
+nav div:last-child {
+  margin-left: auto;
+  margin-right: 40px;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}
+span {
+  color: #5e3bee;
+}
+/* bagian hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5fcff;
+  padding: 50px 0;
+  gap: 100px;
+  margin-top: 150px;
+}
+.hero img {
+  width: 600px;
+  height: auto;
+}
+.text-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.text-hero h1 {
+  font-size: 48px;
+}
+.text-hero p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+.button-hero {
+  padding: 15px 30px;
+  background-color: #5e3bee;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  width: fit-content;
+}
+/* bagian my skills */
+.skills {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  background-color: #ecfffd;
+  margin-top: 150px;
+}
+.text-skills {
+  margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.text-skills h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.cards {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  width: 250px;
+}
+.cards img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 20px;
+}
+.cards h2 {
+  font-size: 21px;
+  font-weight: bold;
+  color: #282938;
+}
+.cards p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #1c1e53;
+}
+/* bagian about me */
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  gap: 100px;
+  margin-top: 150px;
+}
+.image-hero img {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+.text-aboutme {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 600px;
+}
+.text-aboutme h1 {
+  font-size: 48px;
+}
+.text-aboutme p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+/* bagian project */
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  background-color: #ecfffd;
+  margin-top: 150px;
+}
+.project-heading {
+  display: flex;
+  flex-direction: row;
+  gap: 800px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.project-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.project-text h1 {
+  font-size: 36px;
+  font-weight: bolder;
+}
+.project-text p {
+  font-size: 14px;
+}
+.button-project {
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: fit-content;
+  background-color: #e62872;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-project a {
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+}
+.project-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.project-cards {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  width: 300px;
+}
+.project-cards img {
+  width: 100%;
+  height: auto;
+}
+.project-cards-text {
+  padding: 10px;
+}
+.project-cards-text h3 {
+  font-size: 21px;
+  font-weight: bold;
+  color: #282938;
+  margin-bottom: 10px;
+}
+.project-cards-text p {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #1c1e53;
+  margin-bottom: 15px;
+}
+.project-cards-text a {
+  font-size: 11px;
+  color: black;
+  font-weight: light;
+}
+.project-cards-text i {
+  color: #006b6a;
+}
+.project-cards-text a i {
+  margin-left: 5px;
+}
+/* bagian contact me */
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  gap: 100px;
+  margin-top: 150px;
+}
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.contact-text h1 {
+  font-size: 36px;
+  font-weight: bolder;
+}
+.contact-text p {
+  font-size: 14px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.field input {
+  padding: 10px;
+  border: 1px solid #5e3bee;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.row-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+.row-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.field textarea {
+  padding: 10px;
+  border: 1px solid #5e3bee;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: vertical;
+}
+.field select {
+  padding: 10px;
+  border: 1px solid #5e3bee;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.checkbox input {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.butt {
+  display: flex;
+  justify-content: center;
+}
+.butt button {
+  padding: 15px 30px;
+  background-color: #5e3bee;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: lighter;
+}
+/* bagian footer */
+footer {
+  padding: 30px 0;
+  margin-top: 150px;
+}
+.nav-footer {
+  background-color: white;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.connection {
+  display: flex;
+  gap: 15px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+.connection i {
+  color: black;
+  font-size: 20px;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+.creator p {
+  font-size: 16px;
+}
+.policy a {
+  margin-left: 20px;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
