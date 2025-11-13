@@ -1,0 +1,32 @@
+/* html,
+body,
+#flex-container {
+  height: 100%;
+}
+#flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 4px;
+  background: green;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+} */
+ #flex-container {
+  display: flex;
+  flex-direction: row;
+ }
+ .flex-item {
+  background-color: #4CAF50;
+  color: white;
+  margin: 4px;
+  font-size: 30px;
+  flex-basis: 100%;
+  text-align: center;
+  height: 100px;
+ }
